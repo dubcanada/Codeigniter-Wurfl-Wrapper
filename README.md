@@ -25,17 +25,17 @@ web_browsers_patch.xml are located.
 
 You can use the following code:
 
-<?php
-$this->load->library('wurfl');
-$this->wurfl->load('USER_AGENT_HERE');
-?>
+	<?php
+	$this->load->library('wurfl');
+	$this->wurfl->load('USER_AGENT_HERE');
+	?>
 
 You can also pass the $_SERVER variable to $this->wurfl->load()
 
 To get capabilities, you should do the following:
-$this->wurfl->getCapability('max_data_rate');
+	$this->wurfl->getCapability('max_data_rate');
 OR
-$this->wurfl->getAllCapabilities();
+	$this->wurfl->getAllCapabilities();
 
 There are other methods available, which should be 
 fairly self explanatory.
